@@ -9,7 +9,7 @@ var express = require('express');
    else {
       value = req.query.x;
    }
-   var result = Math.round(value);
+   var result = Math.abs(value);
     res.render('computation', { com: `Math.abs(${value}) is ${result}` });
   });
    
