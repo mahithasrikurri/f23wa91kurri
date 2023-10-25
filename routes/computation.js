@@ -1,8 +1,5 @@
 
-  res.render('computation', { function: `Math.abs(${value}) is ${result}` });
-
-
-  var express = require('express');
+var express = require('express');
   var router = express.Router();
    
   router.get('/', function(req, res, next) {
