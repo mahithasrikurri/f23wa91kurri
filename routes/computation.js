@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
  else {
     value = req.query.x;
  }
- var result = Math.round(value);
-  res.render('computation', { compute: `Math.round(${value}) is ${result}` });
+ var result = Math.log(value);
+  res.render('computation', { compute: `Math.log(${value}) is ${result}` });
 });
  
 module.exports = router;
