@@ -10,7 +10,7 @@ var express = require('express');
       value = req.query.x;
    }
    var result = Math.log(value);
-    res.render('computation', { com: `Math.log(${value}) is ${result}` });
+    res.render('computation', {com: `Math.log(${value}) is ${result}` });
   });
    
   module.exports = router;
