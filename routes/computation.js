@@ -9,8 +9,8 @@ var express = require('express');
    else {
       value = req.query.x;
    }
-   var result = Math.abs(value);
-    res.render('computation', { com: `Math.abs(${value}) is ${result}` });
+   var result = Math.log(value);
+    res.render('computation', { com: `Math.log(${value}) is ${result}` });
   });
    
   module.exports = router;
